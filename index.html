@@ -1,14 +1,11 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    
 <link rel="stylesheet" href="owl.carousel.css">
-<link rel="stylesheet" href="owl.carousel.min.css">
-<link rel="stylesheet" href="owl.theme.default.min.css">
-    
-<script src="owl.carousel.min.js"></script>
-    
+<link rel="stylesheet" href="owl.theme.css">
+
+   
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
 <title>Finn Responsive</title>
@@ -20,30 +17,49 @@
     <div class="item"><img src="img/rusticwedding1.jpg" style="width:902px"></div>
     <div class="item"><img src="img/rusticwedding2.jpg" style="width:399px"></div>
     <div class="item"><img src="img/rusticwedding3.jpg" style="width:399px"></div>
-    <div class="item"><img src="img/rusticwedding4.jpg" style="width:399px"></div>  
+    <div class="item"><img src="img/rusticwedding4.jpg" style="width:399px"></div>
+    <div class="item"><img src="img/rusticwedding5.jpg" style="width:399px"></div>
+    <div class="item"><img src="img/rusticwedding6.jpg" style="width:399px"></div>
+    <div class="item"><img src="img/rusticwedding7.jpg" style="width:399px"></div>
     
 </div>
+    
+    <div class="owl-controls">
+        <div class="owl-nav">
+            
+        </div>
+    </div>
 
+    
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="owl.carousel.min.js"></script>
+ 
        
     <script>
         $(document).ready(function() {
           $("#owl-demo").owlCarousel({
-
-          navigation : true,
-          slideSpeed : 300,
-          paginationSpeed : 400,
-          singleItem : true
-
+          
+          //responsive : true,
+          //slideSpeed : 300,
+          //paginationSpeed : 400,
+          //singleItem : false,
           // "singleItem:true" is a shortcut for:
-          // items : 1, 
-          // itemsDesktop : false,
-          // itemsDesktopSmall : false,
-          // itemsTablet: false,
+          margin: 10,
+          nav : true,
+          autoWidth:true,
+          autoPlay: 3000,
+          items : 3, 
+          itemsDesktop : [1200,3],
+          itemsDesktopSmall : [800,3],
+          mouseDrag : true,
+          slideBy : 1
+          //itemsTablet: [500,2],
           // itemsMobile : false
 
         });
      });
     </script> 
+    
         
     </body>
 </html>
