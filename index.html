@@ -33,6 +33,7 @@
     
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script src="owl.carousel.min.js"></script>
+<script src="jquery.mousewheel.js"></script>
  
        
     <script>
@@ -40,25 +41,36 @@
           $("#owl-demo").owlCarousel({
           
           //responsive : true,
+          //responsiveRefreshRate : 200,
+          //responsiveBaseElement : "#owl-demo",
           //slideSpeed : 300,
           //paginationSpeed : 400,
           //singleItem : false,
           // "singleItem:true" is a shortcut for:
           margin: 10,
-          nav : true,
+          //nav : true,
           autoWidth:true,
           autoPlay: 3000,
-          items : 3, 
-          itemsDesktop : [1200,3],
-          itemsDesktopSmall : [800,3],
-          mouseDrag : true,
-          slideBy : 1
+          items : 1, 
+          responsive : {
+              480 : { items : 1 },
+              768 : { items : 2 },
+              1024 : { items : 3
+            }
+          },
+          //itemsDesktop : [1200,3],
+          //itemsDesktopSmall : [800,3],
+          //mouseDrag : true,
+          //slideBy : 1
           //itemsTablet: [500,2],
           // itemsMobile : false
 
         });
      });
-    </script> 
+        
+   </script> 
+    
+   
     
         
     </body>
