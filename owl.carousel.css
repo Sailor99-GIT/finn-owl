@@ -5,6 +5,7 @@
     height: auto;
 }
 
+
 /* 
  *  Owl Carousel - Animate Plugin
  */
@@ -65,6 +66,7 @@
 .owl-carousel {
   display: none;
   width: 100%;
+  
   -webkit-tap-highlight-color: transparent;
   /* position relative and z-index fix webkit rendering fonts issue */
   position: relative;
@@ -85,7 +87,7 @@
 }
 .owl-carousel .owl-stage-outer {
   position: relative;
-  overflow: hidden;
+  overflow: scroll;
   /* fix for flashing background */
   -webkit-transform: translate3d(0px, 0px, 0px);
 }
@@ -113,6 +115,8 @@
 .owl-carousel .owl-refresh .owl-item {
   display: none;
 }
+
+/*Images*/
 .owl-carousel .owl-item {
   position: relative;
   min-height: 1px;
